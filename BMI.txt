@@ -1,0 +1,66 @@
+""" WHAT IS BODY MASS INDEX ?
+    
+    BMI is a measure of relative weight based on an individual’s mass and height.
+    Today, Body Mass Index is commonly used to classify people as underweight, overweight, and even with obesity.
+    Also, it is adopted by countries to promote healthy eating.
+    
+    BMI can be considered as an alternative for direct measurements of body fat.
+    Besides, BMI is an inexpensive and easy-to-perform method of screening for weight classes that may cause health problems."""
+
+  
+    
+Height = float(input("Enter your height in centimeters: "))
+Weight = float(input("Enter your weight in kg: "))
+Height = Height/100 
+BMI = Weight/(Height*Height)
+print ("Your Body Mass Index is :",BMI)
+if(BMI>0):
+    if(BMI<=16):
+        print("You are severely underweight(emaciation)")
+        print("HEALTH RISKS")
+        print("Malnutrition, Hair loss, Skin and teeth problems, anemia, irregular periods and infertility(for women), lack of growth, osteoporosis.")
+        
+        print("Solutions to maintain BMI: ")
+        print("1. Eat more frequently to gain a lot of mass(consume right calories of food).")
+        print("2. Maintain a nutritious diet.")
+        print("3. Drink smoothies and shakes.")
+        print("4. Drink water frequently 3-4 litres per day.")
+        print("5. Add proper percentage of macro-nutrients to your diet(proteins,fats and carbs.)")
+    elif(BMI<=18.5):
+        print("You are underweight")
+        print("HEALTH RISKS")
+        print("Malnutrition, Hair loss, anemia, irregular periods(for women), lack of growth, osteoporosis, surgical complications,low immunity, infertility(for womens).")
+        
+        print("Solutions to maintain BMI: ")
+        print("1. Drink water frequently 3-4 litres per day.")  
+        print("2. Exercise.")
+        print("3. Add healthy calories to your diet.")
+        print("4. Eat Plenty of Protein.")
+        print("5. Drink smoothies and shakes.")
+    elif(BMI<=25):
+        print("You are Healthy/Normal") 
+    elif(BMI<=30):
+        print("You are overweight")
+        print("HEALTH RISKS")
+        print("High blood pressure, type-2 diabeties, breathing problems, cholesterol issue, depression and anxiety.")
+        
+        print("Solutions to maintain BMI: ")
+        print("1. Have a healthy eating plan.")
+        print("2. Drink more water.")
+        print("3. Exercise daily.")
+        print("4. Make a goal and stick to it(walking daily).")
+        print("5. Do not eat foods which have high quantity of oils,fats and proteins.")
+    else:
+        print("You are severely overweight(obesity)")
+        print("HEALTH RISKS")
+        print("High blood pressure, risks of heart attack, arthritis problem,metabolic faliures, hormonal impairments, diabeties, breathing problems, cholesterol issue, depression and anxiety.")
+        
+        print("Solutions to maintain BMI: ")
+        print("1. Be as physically active as possible(exercises, cardio, walking and running on a regular basis).")
+        print("2. Stay hydrated with water and avoid drinks with added sugar.") 
+        print("3. Keep track of what you eat in a food diary.")
+        print("4. Limit portion size to control calorie intake.")
+        print("5. Consult a therapist if needed.")
+        print("6. Under the consultant of doctor weight-loss medicines cans be taken.")   
+else:
+    print("Enter valid details")
